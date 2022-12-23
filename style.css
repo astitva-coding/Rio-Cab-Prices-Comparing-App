@@ -1,0 +1,123 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  height: 60%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+.noshow {
+  display: none;
+}
+
+.header {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  padding: 2rem 7%;
+  align-items: center;
+}
+.header .navbar a {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.header .navbar a:hover {
+  background: #ffc61a;
+  padding: 0.5rem 3rem;
+  border-radius: 15px;
+}
+#menu-bars {
+  color: white;
+  font-size: 2rem;
+  display: none;
+}
+.navbar.active {
+  top: 10%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.card-title {
+  font-size: 2em;
+  font-weight: 900;
+}
+.card-text {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.fare {
+  font-size: 2em;
+  font-weight: 900;
+  background: #fedf59;
+  padding: 0.2em;
+}
+.icon {
+  height: 10em;
+  width: 10em;
+  margin: 0.75em;
+}
